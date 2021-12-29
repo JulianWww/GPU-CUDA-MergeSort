@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("sorter")
+project("sorter" LANGUAGES CXX CUDA)
 
 # Include sub-projects.
 add_subdirectory ("sorter")
