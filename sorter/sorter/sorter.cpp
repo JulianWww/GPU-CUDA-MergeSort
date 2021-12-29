@@ -3,10 +3,11 @@
 
 #include "sorter.h"
 
-using namespace std;
+__global__ void cuda_hello() {
+    printf("Hello World from GPU!\n");
+}
 
-int main()
-{
-	cout << "Hello CMake." << endl;
-	return 0;
+int main() {
+    cuda_hello << <1, 1 >> > ();
+    return 0;
 }
